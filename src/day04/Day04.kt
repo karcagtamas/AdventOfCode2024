@@ -1,7 +1,7 @@
 package day04
 
 import println
-import readInput
+import readLines
 
 data class Vec2(val x: Int, val y: Int)
 
@@ -82,7 +82,7 @@ fun main() {
         return crossCount
     }
 
-    val input = readInput("day04")
+    val input = readLines("day04")
     val grid = Grid(input.map { it.toCharArray().toList() })
 
     part1(grid).println()

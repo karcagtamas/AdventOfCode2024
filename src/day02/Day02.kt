@@ -1,7 +1,7 @@
 package day02
 
 import println
-import readInput
+import readLines
 
 fun main() {
     fun isLineSafe(numbers: List<Int>): Boolean {
@@ -22,7 +22,7 @@ fun main() {
         }
     }
 
-    val input = readInput("day02").map { line -> line.split(" ").map { it.toInt() } }
+    val input = readLines("day02").map { line -> line.split(" ").map { it.toInt() } }
 
     part1(input).println()
     part2(input).println()

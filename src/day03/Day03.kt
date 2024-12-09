@@ -1,7 +1,7 @@
 package day03
 
 import println
-import readInput
+import readLines
 
 fun main() {
     fun findInstructions(memory: List<String>, regex: Regex): List<String> {
@@ -40,7 +40,7 @@ fun main() {
         return acc
     }
 
-    val input = readInput("day03")
+    val input = readLines("day03")
 
     part1(input).println()
     part2(input).println()

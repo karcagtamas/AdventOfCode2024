@@ -1,7 +1,7 @@
 package day01
 
 import println
-import readInput
+import readLines
 import kotlin.math.abs
 
 fun main() {
@@ -22,7 +22,7 @@ fun main() {
         return sum
     }
 
-    val (first, second) = readInput("day01", false)
+    val (first, second) = readLines("day01", false)
         .map { line ->
             val (a, b) = line.split("   ")
             a.toInt() to b.toInt()

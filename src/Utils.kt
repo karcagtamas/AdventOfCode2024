@@ -6,7 +6,12 @@ import kotlin.io.path.readText
 /**
  * Reads lines from the given input txt file.
  */
-fun readInput(name: String, test: Boolean = false) = Path("src/$name/$name${if (test) "_test" else ""}.txt").readText().trim().lines()
+fun readLines(name: String, test: Boolean = false) = Path("src/$name/$name${if (test) "_test" else ""}.txt").readText().trim().lines()
+
+/**
+ * Reads text of the given input file
+ */
+fun readText(name: String, test: Boolean = false) = Path("src/$name/$name${if (test) "_test" else ""}.txt").readText().trim()
 
 /**
  * Converts string to md5 hash.
